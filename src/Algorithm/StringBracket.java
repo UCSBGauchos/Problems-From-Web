@@ -58,7 +58,7 @@ public class StringBracket {
 	
 	public static void main(String [] args){
 		StringBracket sb = new StringBracket();
-		String str = "(abcd(e))";
+		String str = "(abcd(e)))";
 		sb.hasRight = false;
 		if(sb.isPair(str)){
 			System.out.println("Yes");
