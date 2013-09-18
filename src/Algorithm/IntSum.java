@@ -81,7 +81,7 @@ public class IntSum {
 	
 	public static void main(String [] args){
 		IntSum is = new IntSum();
-		int [] array = is.intToArray(5);
+		int [] array = is.intToArray(4);
 		ArrayList<ArrayList<Integer>> result = is.getAllPossible(array);
 		ArrayList<ArrayList<Integer>> modifiedResult = is.removeDup(result);
 		for(ArrayList<Integer> possible: modifiedResult){
