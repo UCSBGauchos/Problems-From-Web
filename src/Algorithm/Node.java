@@ -5,6 +5,8 @@ public class Node {
 	Node left;
 	Node right;
 	Node parents;
+	Node next;
+	Node prev;
 	boolean visited;
 	
 	public Node(int _value){
@@ -13,6 +15,8 @@ public class Node {
 		this.right=null;
 		this.parents = null;
 		this.visited = false;
+		this.next = null;
+		this.prev = null;
 	}
 	
 	public void addLeft(Node node){
@@ -27,5 +31,11 @@ public class Node {
 			this.right = node;
 			node.parents = this;
 		}
+	}
+	
+	public void addNext(Node node){
+		this.next = node;
+		node.next = null;
+		node.prev = this;
 	}
 }
