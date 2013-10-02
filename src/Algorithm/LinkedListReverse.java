@@ -24,9 +24,6 @@ public class LinkedListReverse {
 			tmpPrev1.next = n2;
 		}
 		
-		
-		
-		
 	}
 	
 	public Node reverse(Node node){
